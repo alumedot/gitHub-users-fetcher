@@ -1,0 +1,20 @@
+.User {
+  /*display: inline-block;*/
+  margin: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 0 rgba(79, 89, 101, 0.55);
+}
+
+.Bio {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.User img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 15px 0;
+  box-shadow: -5px 0 7px 0 rgba(110, 119, 130, 0.16);
+  border: 1px solid #292d502e;
+}

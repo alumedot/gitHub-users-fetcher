@@ -1,0 +1,92 @@
+.MainPageElements {
+  padding: 50px 0;
+  top: 155px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 #343a4024;
+  background: linear-gradient(190deg, rgba(230, 100, 101, 0), rgba(52, 58, 64, 0.8))
+}
+
+.MainPageElements h1 {
+  font-size: 2.6em;
+  color: rgb(52, 58, 64);
+  text-shadow: -2px 3px 1px rgba(152, 172, 187, 0.33);
+}
+
+.MainPageElements p {
+  margin: 0 auto 0;
+}
+
+.GoToUsers {
+  background: linear-gradient(rgb(255, 255, 255), rgb(222, 222, 222));
+  font-size: 1.2em;
+  padding: 6px 8px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(20, 115, 210, 0.5);
+  transition: box-shadow 0.3s ease-out;
+
+}
+
+.GoToUsers:hover {
+  box-shadow: 0 0 7px 0 rgba(20, 115, 210, 0.7);
+  text-decoration: none;
+}
+
+.GoToUsers:active {
+  background: linear-gradient(rgb(255, 255, 255), rgba(115, 148, 196, 0.5));
+  border: 0;
+  color: rgb(63, 97, 132);
+}
+
+.Or {
+  color: rgb(52, 58, 64);
+  text-shadow: -2px 2px 1px rgba(99, 118, 132, 0.41);
+  font-size: 1.2em;
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.SearchText {
+  color: #eeeeee;
+  text-shadow: -2px 2px 3px rgba(62, 75, 87, 0.93);
+}
+
+.MainPageElements input {
+  margin: 8px 0;
+  border: 1px solid rgba(3, 45, 78, 0.38);
+  background-color: #efefef;
+}
+
+.MainPageElements input:focus {
+  margin: 8px 0;
+  border: 1px solid rgba(3, 45, 78, 0.52);
+  /*background-color: rgba(0, 223, 255, 0.06);*/
+}
+
+.MainPageElements button {
+  /*border: 1px solid rgba(3, 45, 78, 0.38);*/
+  font-weight: bold;
+  color: rgb(52, 58, 64);
+  text-shadow: -1px 1px 1px rgba(99, 118, 132, 0.23);
+  background: linear-gradient(rgb(255, 255, 255), rgb(196, 196, 196));
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.MainPageElements button:disabled {
+  cursor: not-allowed;
+  color: rgba(52, 58, 64, 0.31);
+}
+
+.Error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  border-radius: 5px;
+  width: 40%;
+  padding: 5px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,42 @@
+.RepoHeader {
+  padding-top: 8px;
+}
+
+.RepoHeader h1 {
+  /*margin: 0;*/
+}
+
+.RepoHeader p {
+  margin: 0;
+}
+
+.RepoContent {
+  padding-left: 20px;
+}
+
+.Name {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.Icon {
+  display: inline-block;
+  fill: rgba(3,47,98,.5);
+  position: relative;
+  bottom: 2px;
+}
+
+.Readme {
+}
+
+.ReadmeIcon {
+  fill: rgba(3,47,98,.5);
+  position: relative;
+  bottom: 2px;
+  padding: 0 5px;
+  width: 28px;
+}
+
+.ReadmeLink:hover .ReadmeIcon {
+  fill: rgba(47, 112, 255, 0.91);
+}
