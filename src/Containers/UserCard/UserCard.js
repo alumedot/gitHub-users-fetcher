@@ -19,7 +19,7 @@ class UserCard extends Component {
   render() {
     let userCard = this.props.error ?
         <ErrorMessage message={this.props.error.message}/>
-        : <Spinner style={{margin: '0 auto'}} animation="border" />;
+        : <Spinner className={classes.MainSpinner} animation="border" />;
     if (this.props.loadedUser) {
 
       let location = null;

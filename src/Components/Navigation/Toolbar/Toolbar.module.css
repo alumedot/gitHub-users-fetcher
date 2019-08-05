@@ -1,7 +1,25 @@
 .Icon {
-  fill: #eeeeee;
+  fill: #fcfcfc;
 }
 
 .Icon:hover {
   fill: #afafaf;
+}
+
+.NavigationItem {
+  color: #a5a5a5;
+}
+
+.NavigationItem:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.active:hover {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+.active {
+  color: #ffffff;
 }

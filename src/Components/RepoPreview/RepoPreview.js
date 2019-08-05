@@ -2,11 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Row, Col} from 'react-bootstrap';
 
-import classes from './Repo.module.css';
+import classes from './RepoPreview.module.css';
 
 const repoPreview = (props) => {
   let text = props.description;
-  text = text !== null && text.length > 100 ? text.substring(0, 100) + '...' : text;
+  text = text !== null && text.length > 80 ? text.substring(0, 80) + '...' : text;
   return (
   <Col xs={12} md={6} style={{height: '150px', padding: '10px'}}>
     <Row className={classes.Repo}>
@@ -20,12 +20,12 @@ const repoPreview = (props) => {
         </Row>
         <Row className={classes.Text}>
           <Col>
-            {text}
+            <p>{text}</p>
           </Col>
         </Row>
         <Row className={classes.RepoLanguage}>
           <Col>
-            <span className={classes.RepoLanguageColor}></span>{props.language}
+            <p>{props.language}</p>
           </Col>
           <Col>
 

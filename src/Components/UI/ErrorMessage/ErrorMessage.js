@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Alert} from 'react-bootstrap';
 import {Redirect} from 'react-router-dom';
 
+import classes from './ErrorMessage.module.css';
+
 class ErrorMessage extends Component {
 
   state = {
@@ -16,7 +18,10 @@ class ErrorMessage extends Component {
     let alertMes = <Redirect to='/' />;
     if (!this.state.redirect) {
       alertMes = (
-          <Alert style={{margin: '40px 0'}} variant="danger" onClose={() => this.onCloseHandler()} dismissible>
+          <Alert className={classes.ErrorMessage}
+                 variant="danger"
+                 onClose={() => this.onCloseHandler()}
+                 dismissible>
             <Alert.Heading>{this.props.message}</Alert.Heading>
           </Alert>
       );

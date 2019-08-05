@@ -1,6 +1,7 @@
 import React from 'react';
-import {Navbar} from 'react-bootstrap';
+import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
+import {NavLink} from 'react-router-dom';
 
 import classes from './Toolbar.module.css';
 
@@ -19,6 +20,17 @@ const toolbar = (props) => (
           </svg>
         </Navbar.Brand>
       </LinkContainer>
+      <Nav className="mr-auto">
+        {/*<LinkContainer exact to='/users/'>*/}
+        <NavItem>
+          <NavLink className={classes.NavigationItem}
+                   activeClassName={classes.active}
+                   exact
+                   to='/users/'>Users</NavLink>
+        </NavItem>
+          {/*<Nav.Link href='/users/'>Users</Nav.Link>*/}
+        {/*</LinkContainer>*/}
+      </Nav>
     </Navbar>
 );
 

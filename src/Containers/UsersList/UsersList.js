@@ -12,7 +12,9 @@ import * as actions from '../../store/actions/index';
 class UsersList extends Component {
 
   componentDidMount() {
-    this.props.onFetchUsers();
+    if (!this.props.users) {
+      this.props.onFetchUsers();
+    }
   }
 
   nextTenHandler = () => {
@@ -39,7 +41,7 @@ class UsersList extends Component {
         <React.Fragment>
           <Row>
             <Col className={classes.NextTen}>
-              <button onClick={this.nextTenHandler}>Next 10 users</button>
+              {!this.props.error ? <button onClick={this.nextTenHandler}>Next 10 users</button> : null}
             </Col>
           </Row>
           <Row className={classes.UsersList}>

@@ -5,12 +5,13 @@ import {Spinner} from 'react-bootstrap';
 import {Row} from 'react-bootstrap';
 import RepoPreview from '../../Components/RepoPreview/RepoPreview';
 import * as actions from '../../store/actions/index';
+import ErrorMessage from '../../Components/UI/ErrorMessage/ErrorMessage';
 
 class ReposList extends Component {
 
   render() {
     let repos = this.props.loading ? <Spinner style={{margin: '40px auto'}} animation="border" />
-        : this.props.error ? <p>{this.props.error.message}</p> : null;
+        : this.props.error ? <ErrorMessage message={this.props.error.message} /> : null;
     if (this.props.repos && !this.props.loading) {
       repos = this.props.repos.map(repo => {
         return <RepoPreview

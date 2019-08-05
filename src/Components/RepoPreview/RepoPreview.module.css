@@ -4,7 +4,16 @@
   border-radius: 3px;
   width: 100%;
   height: 100%;
-  padding: 5px
+  padding: 5px;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.Repo:hover {
+  box-shadow: 0 0 5px 0 rgba(20, 115, 210, 0.5);
+}
+
+.Repo strong {
+  word-break: break-word;
 }
 
 .RepoLanguage {
@@ -12,6 +21,10 @@
   bottom: 0;
   color: #586069;
   font-size: 12px;
+}
+
+.RepoLanguage p {
+  margin: 0;
 }
 
 .Repo-language-color {

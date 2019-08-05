@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Row, Col} from 'react-bootstrap';
 import classes from './UserPreview.module.css';
-import UserPreviewImage from './UserPreviewImage';
+import UserPreviewImage from './UserPreviewImage/UserPreviewImage';
 
 const userPreview = (props) => {
   return (

@@ -16,7 +16,7 @@ const setRepos = (state, action) => {
 };
 
 const fetchReposFailed = (state, action) => {
-  return objectUpdate(state, {error: action.error});
+  return objectUpdate(state, {error: action.error, loading: false});
 };
 
 const reducer = (state = initialState, action) => {
